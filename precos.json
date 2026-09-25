@@ -1,0 +1,134 @@
+{
+  "atualizado": "2026-09-25",
+  "grupos": [
+    {
+      "id": "fotografia",
+      "titulo": "Fotografia",
+      "hint": "Selecione quantos quiser",
+      "itens": [
+        {
+          "id": "foto10",
+          "nome": "10 Fotos",
+          "subtitulo": "Fotografia",
+          "parcelas": 3,
+          "desc": "Ideal para renovar seu perfil e redes sociais com um posicionamento profissional.",
+          "preco": 433,
+          "destaque": false
+        },
+        {
+          "id": "foto15",
+          "nome": "15 Fotos",
+          "subtitulo": "Fotografia",
+          "parcelas": 3,
+          "desc": "Variedade de still para manter sua presença ativa por semanas.",
+          "preco": 561,
+          "destaque": false
+        },
+        {
+          "id": "foto20",
+          "nome": "20 Fotos",
+          "subtitulo": "Fotografia",
+          "parcelas": 3,
+          "desc": "Banco de imagens robusto para campanhas e conteúdo recorrente.",
+          "preco": 618,
+          "destaque": true
+        },
+        {
+          "id": "foto30",
+          "nome": "30 Fotos",
+          "subtitulo": "Fotografia",
+          "parcelas": 4,
+          "desc": "Cobertura completa para um mês inteiro de publicações.",
+          "preco": 692,
+          "destaque": false
+        }
+      ]
+    },
+    {
+      "id": "video",
+      "titulo": "Vídeo",
+      "hint": "Reels, Stories e conteúdo vertical",
+      "itens": [
+        {
+          "id": "video5",
+          "nome": "5 vídeos de até 1min",
+          "subtitulo": "Produção de vídeo",
+          "parcelas": 5,
+          "desc": "Reels e Stories prontos para engajar seu público.",
+          "preco": 997,
+          "destaque": false
+        },
+        {
+          "id": "video7",
+          "nome": "7 vídeos de até 1min",
+          "subtitulo": "Produção de vídeo",
+          "parcelas": 5,
+          "desc": "Conteúdo em vídeo para alimentar sua semana toda.",
+          "preco": 1275,
+          "destaque": false
+        },
+        {
+          "id": "video10",
+          "nome": "10 vídeos de até 1min",
+          "subtitulo": "Produção de vídeo",
+          "parcelas": 5,
+          "desc": "Produção intensa para quem posta vídeo com frequência.",
+          "preco": 1553,
+          "destaque": true
+        },
+        {
+          "id": "video20",
+          "nome": "20 vídeos de até 1min",
+          "subtitulo": "Produção de vídeo",
+          "parcelas": 5,
+          "desc": "Produção em escala para quem vive de vídeo no feed.",
+          "preco": 2983,
+          "destaque": false
+        }
+      ]
+    },
+    {
+      "id": "combos",
+      "titulo": "Combos",
+      "hint": "Foto + vídeo com melhor custo",
+      "itens": [
+        {
+          "id": "combo-trafego",
+          "nome": "Combo Tráfego pago",
+          "subtitulo": "Fotografia e produção de vídeo",
+          "parcelas": 5,
+          "desc": "10 Fotos + 5 vídeos de até 1min\nMaterial pronto para suas campanhas de anúncios",
+          "preco": 1457,
+          "destaque": false
+        },
+        {
+          "id": "combo-essencial",
+          "nome": "Combo Essencial",
+          "subtitulo": "Fotografia e produção de vídeo",
+          "parcelas": 5,
+          "desc": "7 vídeos de até 1min + 15 Fotos\nO equilíbrio ideal entre foto e vídeo no dia a dia da marca",
+          "preco": 1693,
+          "destaque": false
+        },
+        {
+          "id": "combo-mes",
+          "nome": "1 mês de conteúdo",
+          "subtitulo": "Fotografia e produção de vídeo",
+          "parcelas": 5,
+          "desc": "20 Fotos + 10 vídeos de até 1min\nO conteúdo do mês inteiro resolvido em uma única produção",
+          "preco": 2097,
+          "destaque": true
+        },
+        {
+          "id": "combo-mes-pro",
+          "nome": "1 mês de conteúdo Pro",
+          "subtitulo": "Fotografia e produção de vídeo",
+          "parcelas": 5,
+          "desc": "10 Fotos + 20 vídeos de até 1min\nO pacote mais completo para dominar o feed o mês inteiro",
+          "preco": 3297,
+          "destaque": false
+        }
+      ]
+    }
+  ]
+}
