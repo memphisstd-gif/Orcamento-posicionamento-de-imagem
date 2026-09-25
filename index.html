@@ -454,8 +454,8 @@
   }
   .gallery-item:hover .gallery-item__zoom{ opacity:1; transform:none; }
 
-  .gallery-extra{ display:none; }
-  .gallery-extra.is-shown{ display:contents; }
+  .gallery-item--extra{ display:none; }
+  .gallery-grid.is-shown .gallery-item--extra{ display:block; }
 
   .gallery-more{ display:flex; justify-content:center; margin-top:clamp(22px, 3vw, 36px); }
 
@@ -1182,42 +1182,7 @@
       </div>
     </div>
 
-    <div class="gallery-grid" id="galleryGrid">
-      <button class="gallery-item reveal" style="--d:0" data-index="0"><img src="assets/img/gallery/gallery-01.webp" alt="Retrato de posicionamento — still urbano" loading="lazy"><span class="gallery-item__zoom" aria-hidden="true">+</span></button>
-      <button class="gallery-item reveal" style="--d:1" data-index="1"><img src="assets/img/gallery/gallery-02.webp" alt="Ensaio lifestyle — luzes de rua" loading="lazy"><span class="gallery-item__zoom" aria-hidden="true">+</span></button>
-      <button class="gallery-item reveal" style="--d:2" data-index="2"><img src="assets/img/gallery/gallery-03.webp" alt="Retrato corporativo — autoridade executiva" loading="lazy"><span class="gallery-item__zoom" aria-hidden="true">+</span></button>
-      <button class="gallery-item reveal" style="--d:3" data-index="3"><img src="assets/img/gallery/gallery-04.webp" alt="Retrato corporativo — fachada corporativa" loading="lazy"><span class="gallery-item__zoom" aria-hidden="true">+</span></button>
-      <button class="gallery-item reveal" style="--d:4" data-index="4"><img src="assets/img/gallery/gallery-05.webp" alt="Lifestyle de marca — bastidores" loading="lazy"><span class="gallery-item__zoom" aria-hidden="true">+</span></button>
-      <button class="gallery-item reveal" style="--d:0" data-index="5"><img src="assets/img/gallery/gallery-06.webp" alt="Lifestyle de marca — ambiente" loading="lazy"><span class="gallery-item__zoom" aria-hidden="true">+</span></button>
-      <button class="gallery-item reveal" style="--d:1" data-index="6"><img src="assets/img/gallery/gallery-07.webp" alt="Still de produto — gastronomia" loading="lazy"><span class="gallery-item__zoom" aria-hidden="true">+</span></button>
-      <button class="gallery-item reveal" style="--d:2" data-index="7"><img src="assets/img/gallery/gallery-08.webp" alt="Flat lay — gastronomia" loading="lazy"><span class="gallery-item__zoom" aria-hidden="true">+</span></button>
-      <button class="gallery-item reveal" style="--d:3" data-index="8"><img src="assets/img/gallery/gallery-09.webp" alt="Still de produto — varejo" loading="lazy"><span class="gallery-item__zoom" aria-hidden="true">+</span></button>
-      <button class="gallery-item reveal" style="--d:4" data-index="9"><img src="assets/img/gallery/gallery-10.webp" alt="Retrato de marca pessoal" loading="lazy"><span class="gallery-item__zoom" aria-hidden="true">+</span></button>
-
-      <div class="gallery-extra" id="galleryExtra">
-        <button class="gallery-item reveal" data-index="10"><img src="assets/img/gallery/gallery-11.webp" alt="Retrato editorial — movimento" loading="lazy"><span class="gallery-item__zoom" aria-hidden="true">+</span></button>
-        <button class="gallery-item reveal" data-index="11"><img src="assets/img/gallery/gallery-12.webp" alt="Ensaio editorial" loading="lazy"><span class="gallery-item__zoom" aria-hidden="true">+</span></button>
-        <button class="gallery-item reveal" data-index="12"><img src="assets/img/gallery/gallery-13.webp" alt="Ensaio de posicionamento" loading="lazy"><span class="gallery-item__zoom" aria-hidden="true">+</span></button>
-        <button class="gallery-item reveal" data-index="13"><img src="assets/img/gallery/gallery-14.webp" alt="Ensaio de posicionamento" loading="lazy"><span class="gallery-item__zoom" aria-hidden="true">+</span></button>
-        <button class="gallery-item reveal" data-index="14"><img src="assets/img/gallery/gallery-15.webp" alt="Ensaio de posicionamento" loading="lazy"><span class="gallery-item__zoom" aria-hidden="true">+</span></button>
-        <button class="gallery-item reveal" data-index="15"><img src="assets/img/gallery/gallery-16.webp" alt="Ensaio de posicionamento" loading="lazy"><span class="gallery-item__zoom" aria-hidden="true">+</span></button>
-        <button class="gallery-item reveal" data-index="16"><img src="assets/img/gallery/gallery-17.webp" alt="Ensaio de posicionamento" loading="lazy"><span class="gallery-item__zoom" aria-hidden="true">+</span></button>
-        <button class="gallery-item reveal" data-index="17"><img src="assets/img/gallery/gallery-18.webp" alt="Retrato de marca pessoal" loading="lazy"><span class="gallery-item__zoom" aria-hidden="true">+</span></button>
-        <button class="gallery-item reveal" data-index="18"><img src="assets/img/gallery/gallery-19.webp" alt="Retrato de marca pessoal" loading="lazy"><span class="gallery-item__zoom" aria-hidden="true">+</span></button>
-        <button class="gallery-item reveal" data-index="19"><img src="assets/img/gallery/gallery-20.webp" alt="Ensaio lifestyle" loading="lazy"><span class="gallery-item__zoom" aria-hidden="true">+</span></button>
-        <button class="gallery-item reveal" data-index="20"><img src="assets/img/gallery/gallery-21.webp" alt="Retrato corporativo" loading="lazy"><span class="gallery-item__zoom" aria-hidden="true">+</span></button>
-        <button class="gallery-item reveal" data-index="21"><img src="assets/img/gallery/gallery-22.webp" alt="Retrato corporativo" loading="lazy"><span class="gallery-item__zoom" aria-hidden="true">+</span></button>
-        <button class="gallery-item reveal" data-index="22"><img src="assets/img/gallery/gallery-23.webp" alt="Lifestyle de marca — bastidores" loading="lazy"><span class="gallery-item__zoom" aria-hidden="true">+</span></button>
-        <button class="gallery-item reveal" data-index="23"><img src="assets/img/gallery/gallery-24.webp" alt="Lifestyle de marca — bastidores" loading="lazy"><span class="gallery-item__zoom" aria-hidden="true">+</span></button>
-        <button class="gallery-item reveal" data-index="24"><img src="assets/img/gallery/gallery-25.webp" alt="Lifestyle de marca — bastidores" loading="lazy"><span class="gallery-item__zoom" aria-hidden="true">+</span></button>
-        <button class="gallery-item reveal" data-index="25"><img src="assets/img/gallery/gallery-26.webp" alt="Lifestyle de marca — bastidores" loading="lazy"><span class="gallery-item__zoom" aria-hidden="true">+</span></button>
-        <button class="gallery-item reveal" data-index="26"><img src="assets/img/gallery/gallery-27.webp" alt="Still de produto — gastronomia" loading="lazy"><span class="gallery-item__zoom" aria-hidden="true">+</span></button>
-        <button class="gallery-item reveal" data-index="27"><img src="assets/img/gallery/gallery-28.webp" alt="Still de produto — gastronomia" loading="lazy"><span class="gallery-item__zoom" aria-hidden="true">+</span></button>
-        <button class="gallery-item reveal" data-index="28"><img src="assets/img/gallery/gallery-29.webp" alt="Still de produto — gastronomia" loading="lazy"><span class="gallery-item__zoom" aria-hidden="true">+</span></button>
-        <button class="gallery-item reveal" data-index="29"><img src="assets/img/gallery/gallery-30.webp" alt="Still de produto — varejo" loading="lazy"><span class="gallery-item__zoom" aria-hidden="true">+</span></button>
-        <button class="gallery-item reveal" data-index="30"><img src="assets/img/gallery/gallery-31.webp" alt="Still de produto — varejo" loading="lazy"><span class="gallery-item__zoom" aria-hidden="true">+</span></button>
-      </div>
-    </div>
+    <div class="gallery-grid" id="galleryGrid"></div>
 
     <div class="gallery-more">
       <button class="btn btn--ghost" id="galleryMoreBtn">
@@ -1422,7 +1387,7 @@
     <div class="modal__head">
       <div>
         <div class="modal__title">Editar valores dos pacotes</div>
-        <p class="modal__sub">Altere título, subtítulo, descrição (Enter quebra a linha no card), preço, parcelas e qual card leva o selo <b>Mais escolhido</b> (★, só um por vez). <b>Salvar preview</b> aplica só neste navegador. <b>Publicar no site</b> grava o arquivo <code>precos.json</code> no GitHub e atualiza para todos os visitantes em ~1 minuto.</p>
+        <p class="modal__sub">Altere título, subtítulo, descrição (Enter quebra a linha no card), preço, parcelas e qual card leva o selo <b>Mais escolhido</b> (★ — um por categoria). <b>Salvar preview</b> aplica só neste navegador. <b>Publicar no site</b> grava o arquivo <code>precos.json</code> no GitHub e atualiza para todos os visitantes em ~1 minuto.</p>
       </div>
       <button type="button" class="modal__close" id="adminClose" aria-label="Fechar">&times;</button>
     </div>
@@ -1490,7 +1455,7 @@
   /* ---------------- DADOS PADRÃO ---------------- */
 
   var DEFAULTS = {
-    atualizado: '2026-09-18',
+    atualizado: '2026-09-25',
     grupos: [
       {
         id:'fotografia',
@@ -1499,7 +1464,7 @@
         itens:[
           { id:'foto10', nome:'10 Fotos', subtitulo:'Fotografia', parcelas:3, desc:'Ideal para renovar seu perfil e redes sociais com um posicionamento profissional.', preco:533, destaque:false },
           { id:'foto15', nome:'15 Fotos', subtitulo:'Fotografia', parcelas:3, desc:'Variedade de still para manter sua presença ativa por semanas.', preco:561, destaque:false },
-          { id:'foto20', nome:'20 Fotos', subtitulo:'Fotografia', parcelas:3, desc:'Banco de imagens robusto para campanhas e conteúdo recorrente.', preco:618, destaque:false },
+          { id:'foto20', nome:'20 Fotos', subtitulo:'Fotografia', parcelas:3, desc:'Banco de imagens robusto para campanhas e conteúdo recorrente.', preco:618, destaque:true },
           { id:'foto30', nome:'30 Fotos', subtitulo:'Fotografia', parcelas:4, desc:'Cobertura completa para um mês inteiro de publicações.', preco:692, destaque:false }
         ]
       },
@@ -1510,7 +1475,7 @@
         itens:[
           { id:'video5',  nome:'5 vídeos de até 1min',  subtitulo:'Produção de vídeo', parcelas:5, desc:'Reels e Stories prontos para engajar seu público.', preco:997, destaque:false },
           { id:'video7',  nome:'7 vídeos de até 1min',  subtitulo:'Produção de vídeo', parcelas:5, desc:'Conteúdo em vídeo para alimentar sua semana toda.', preco:1275, destaque:false },
-          { id:'video10', nome:'10 vídeos de até 1min', subtitulo:'Produção de vídeo', parcelas:5, desc:'Produção intensa para quem posta vídeo com frequência.', preco:1553, destaque:false },
+          { id:'video10', nome:'10 vídeos de até 1min', subtitulo:'Produção de vídeo', parcelas:5, desc:'Produção intensa para quem posta vídeo com frequência.', preco:1553, destaque:true },
           { id:'video20', nome:'20 vídeos de até 1min', subtitulo:'Produção de vídeo', parcelas:5, desc:'Produção em escala para quem vive de vídeo no feed.', preco:2983, destaque:false }
         ]
       },
@@ -1748,73 +1713,155 @@
 
   /* ---------------- GALERIA / LIGHTBOX ---------------- */
 
-  (function(){
-    var items = Array.prototype.slice.call(document.querySelectorAll('#galleryGrid .gallery-item'));
-    if(!items.length) return;
+  /* Lista embutida: vale se o galeria.json não existir ou falhar.
+     O arquivo galeria.json é gerado pelo script atualizar-galeria.command. */
+  var GALERIA_PADRAO = {
+    visiveis: 10,
+    fotos: [
+      { src:"assets/img/gallery/gallery-01.webp", alt:"Retrato de posicionamento — still urbano" },
+      { src:"assets/img/gallery/gallery-02.webp", alt:"Ensaio lifestyle — luzes de rua" },
+      { src:"assets/img/gallery/gallery-03.webp", alt:"Retrato corporativo — autoridade executiva" },
+      { src:"assets/img/gallery/gallery-04.webp", alt:"Retrato corporativo — fachada corporativa" },
+      { src:"assets/img/gallery/gallery-05.webp", alt:"Lifestyle de marca — bastidores" },
+      { src:"assets/img/gallery/gallery-06.webp", alt:"Lifestyle de marca — ambiente" },
+      { src:"assets/img/gallery/gallery-07.webp", alt:"Still de produto — gastronomia" },
+      { src:"assets/img/gallery/gallery-08.webp", alt:"Flat lay — gastronomia" },
+      { src:"assets/img/gallery/gallery-09.webp", alt:"Still de produto — varejo" },
+      { src:"assets/img/gallery/gallery-10.webp", alt:"Retrato de marca pessoal" },
+      { src:"assets/img/gallery/gallery-11.webp", alt:"Retrato editorial — movimento" },
+      { src:"assets/img/gallery/gallery-12.webp", alt:"Ensaio editorial" },
+      { src:"assets/img/gallery/gallery-13.webp", alt:"Ensaio de posicionamento" },
+      { src:"assets/img/gallery/gallery-14.webp", alt:"Ensaio de posicionamento" },
+      { src:"assets/img/gallery/gallery-15.webp", alt:"Ensaio de posicionamento" },
+      { src:"assets/img/gallery/gallery-16.webp", alt:"Ensaio de posicionamento" },
+      { src:"assets/img/gallery/gallery-17.webp", alt:"Ensaio de posicionamento" },
+      { src:"assets/img/gallery/gallery-18.webp", alt:"Retrato de marca pessoal" },
+      { src:"assets/img/gallery/gallery-19.webp", alt:"Retrato de marca pessoal" },
+      { src:"assets/img/gallery/gallery-20.webp", alt:"Ensaio lifestyle" },
+      { src:"assets/img/gallery/gallery-21.webp", alt:"Retrato corporativo" },
+      { src:"assets/img/gallery/gallery-22.webp", alt:"Retrato corporativo" },
+      { src:"assets/img/gallery/gallery-23.webp", alt:"Lifestyle de marca — bastidores" },
+      { src:"assets/img/gallery/gallery-24.webp", alt:"Lifestyle de marca — bastidores" },
+      { src:"assets/img/gallery/gallery-25.webp", alt:"Lifestyle de marca — bastidores" },
+      { src:"assets/img/gallery/gallery-26.webp", alt:"Lifestyle de marca — bastidores" },
+      { src:"assets/img/gallery/gallery-27.webp", alt:"Still de produto — gastronomia" },
+      { src:"assets/img/gallery/gallery-28.webp", alt:"Still de produto — gastronomia" },
+      { src:"assets/img/gallery/gallery-29.webp", alt:"Still de produto — gastronomia" },
+      { src:"assets/img/gallery/gallery-30.webp", alt:"Still de produto — varejo" },
+      { src:"assets/img/gallery/gallery-31.webp", alt:"Still de produto — varejo" }
+    ]
+  };
 
-    var photos = items.map(function(b){
-      var img = b.querySelector('img');
-      return { src: img.getAttribute('src'), alt: img.getAttribute('alt') };
+  var GALERIA = GALERIA_PADRAO;
+  var galeriaAberta = false;
+
+  function galeriaValida(g){
+    return g && Array.isArray(g.fotos) && g.fotos.length &&
+           g.fotos.every(function(f){ return f && typeof f.src === 'string'; });
+  }
+
+  function renderGaleria(){
+    var grid = document.getElementById('galleryGrid');
+    var moreWrap = document.querySelector('.gallery-more');
+    var moreBtn = document.getElementById('galleryMoreBtn');
+    var moreLbl = document.getElementById('galleryMoreLabel');
+    if(!grid) return;
+
+    var fotos = GALERIA.fotos;
+    var visiveis = Number(GALERIA.visiveis) || fotos.length;
+
+    grid.innerHTML = '';
+    grid.classList.remove('is-shown');
+    galeriaAberta = false;
+    if(moreLbl) moreLbl.textContent = 'Ver mais fotos';
+
+    fotos.forEach(function(f, i){
+      var btn = document.createElement('button');
+      btn.className = 'gallery-item reveal' + (i >= visiveis ? ' gallery-item--extra' : '');
+      btn.style.setProperty('--d', i % 5);
+      btn.dataset.index = i;
+
+      var img = document.createElement('img');
+      img.src = f.src;
+      img.alt = f.alt || '';
+      img.loading = i < 5 ? 'eager' : 'lazy';
+
+      var zoom = document.createElement('span');
+      zoom.className = 'gallery-item__zoom';
+      zoom.setAttribute('aria-hidden', 'true');
+      zoom.textContent = '+';
+
+      btn.appendChild(img);
+      btn.appendChild(zoom);
+      btn.addEventListener('click', function(){ abrirLightbox(i); });
+      grid.appendChild(btn);
     });
 
-    var lb = document.getElementById('lightbox');
+    if(moreWrap) moreWrap.style.display = fotos.length > visiveis ? 'flex' : 'none';
+    if(moreBtn && !moreBtn.dataset.ligado){
+      moreBtn.dataset.ligado = '1';
+      moreBtn.addEventListener('click', function(){
+        galeriaAberta = !galeriaAberta;
+        if(galeriaAberta){
+          grid.classList.add('is-shown');
+          var extras = grid.querySelectorAll('.gallery-item--extra');
+          requestAnimationFrame(function(){
+            Array.prototype.forEach.call(extras, function(el, i){
+              setTimeout(function(){ el.classList.add('is-visible'); }, i * 35);
+            });
+          });
+          if(moreLbl) moreLbl.textContent = 'Ver menos fotos';
+        } else {
+          Array.prototype.forEach.call(grid.querySelectorAll('.gallery-item--extra'), function(el){
+            el.classList.remove('is-visible');
+          });
+          grid.classList.remove('is-shown');
+          if(moreLbl) moreLbl.textContent = 'Ver mais fotos';
+          document.getElementById('galeria').scrollIntoView({ behavior:'smooth', block:'start' });
+        }
+      });
+    }
+
+    observeReveals(grid);
+  }
+
+  /* lightbox */
+  var lbAtual = 0;
+
+  function lbMostrar(i){
+    var fotos = GALERIA.fotos;
+    lbAtual = (i + fotos.length) % fotos.length;
     var lbImg = document.getElementById('lightboxImg');
-    var counter = document.getElementById('lightboxCounter');
-    var cur = 0;
+    lbImg.src = fotos[lbAtual].src;
+    lbImg.alt = fotos[lbAtual].alt || '';
+    document.getElementById('lightboxCounter').textContent = (lbAtual + 1) + ' / ' + fotos.length;
+  }
+  function abrirLightbox(i){
+    var lb = document.getElementById('lightbox');
+    lbMostrar(i);
+    lb.classList.add('is-open');
+    lb.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+  }
+  function fecharLightbox(){
+    var lb = document.getElementById('lightbox');
+    lb.classList.remove('is-open');
+    lb.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+  }
 
-    function show(i){
-      cur = (i + photos.length) % photos.length;
-      lbImg.src = photos[cur].src;
-      lbImg.alt = photos[cur].alt;
-      counter.textContent = (cur + 1) + ' / ' + photos.length;
-    }
-    function open(i){
-      show(i);
-      lb.classList.add('is-open');
-      lb.setAttribute('aria-hidden','false');
-      document.body.style.overflow = 'hidden';
-    }
-    function close(){
-      lb.classList.remove('is-open');
-      lb.setAttribute('aria-hidden','true');
-      document.body.style.overflow = '';
-    }
-
-    items.forEach(function(b, i){ b.addEventListener('click', function(){ open(i); }); });
-    document.getElementById('lightboxClose').addEventListener('click', close);
-    document.getElementById('lightboxPrev').addEventListener('click', function(){ show(cur - 1); });
-    document.getElementById('lightboxNext').addEventListener('click', function(){ show(cur + 1); });
-    lb.addEventListener('click', function(e){ if(e.target === lb) close(); });
+  (function(){
+    var lb = document.getElementById('lightbox');
+    if(!lb) return;
+    document.getElementById('lightboxClose').addEventListener('click', fecharLightbox);
+    document.getElementById('lightboxPrev').addEventListener('click', function(){ lbMostrar(lbAtual - 1); });
+    document.getElementById('lightboxNext').addEventListener('click', function(){ lbMostrar(lbAtual + 1); });
+    lb.addEventListener('click', function(e){ if(e.target === lb) fecharLightbox(); });
     document.addEventListener('keydown', function(e){
       if(!lb.classList.contains('is-open')) return;
-      if(e.key === 'Escape') close();
-      if(e.key === 'ArrowLeft') show(cur - 1);
-      if(e.key === 'ArrowRight') show(cur + 1);
-    });
-  })();
-
-  (function(){
-    var extra = document.getElementById('galleryExtra');
-    var btn = document.getElementById('galleryMoreBtn');
-    var lbl = document.getElementById('galleryMoreLabel');
-    if(!extra || !btn) return;
-    var els = Array.prototype.slice.call(extra.querySelectorAll('.reveal'));
-    var shown = false;
-
-    btn.addEventListener('click', function(){
-      shown = !shown;
-      if(shown){
-        extra.classList.add('is-shown');
-        requestAnimationFrame(function(){
-          els.forEach(function(el, i){ setTimeout(function(){ el.classList.add('is-visible'); }, i * 35); });
-        });
-        lbl.textContent = 'Ver menos fotos';
-      } else {
-        els.forEach(function(el){ el.classList.remove('is-visible'); });
-        extra.classList.remove('is-shown');
-        lbl.textContent = 'Ver mais fotos';
-        document.getElementById('galeria').scrollIntoView({ behavior:'smooth', block:'start' });
-      }
+      if(e.key === 'Escape') fecharLightbox();
+      if(e.key === 'ArrowLeft') lbMostrar(lbAtual - 1);
+      if(e.key === 'ArrowRight') lbMostrar(lbAtual + 1);
     });
   })();
 
@@ -1910,10 +1957,10 @@
         inParc.addEventListener('input', function(){ draft.grupos[gi].itens[ii].parcelas = Number(inParc.value) || 0; });
         star.addEventListener('click', function(){
           var on = star.getAttribute('aria-pressed') === 'true';
-          // destaque é exclusivo: só um card por vez
+          // o destaque é exclusivo DENTRO da categoria: um "Mais escolhido" por grupo
           if(!on){
-            draft.grupos.forEach(function(gg){ gg.itens.forEach(function(it){ it.destaque = false; }); });
-            adminGroupsEl.querySelectorAll('.admin-star').forEach(function(b){ b.setAttribute('aria-pressed','false'); });
+            draft.grupos[gi].itens.forEach(function(it){ it.destaque = false; });
+            block.querySelectorAll('.admin-star').forEach(function(b){ b.setAttribute('aria-pressed','false'); });
           }
           draft.grupos[gi].itens[ii].destaque = !on;
           star.setAttribute('aria-pressed', !on ? 'true' : 'false');
@@ -2057,6 +2104,7 @@
 
   function boot(){
     renderPackages();
+    renderGaleria();
     observeReveals(document);
   }
 
@@ -2081,6 +2129,16 @@
         try{ localStorage.removeItem(LS_PRICES); }catch(e){}
         renderPackages();
       }
+    })
+    .catch(function(){});
+
+  // 3) galeria publicada — gerada pelo script atualizar-galeria.command
+  fetch('galeria.json?v=' + Date.now(), { cache:'no-store' })
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(remota){
+      if(!galeriaValida(remota)) return;
+      GALERIA = remota;
+      renderGaleria();
     })
     .catch(function(){});
 })();

@@ -5,15 +5,18 @@ Site estático (HTML/CSS/JS puro, sem build), tema escuro sobre fundo preto, usa
 ## Arquivos
 
 ```
-index.html        → o site inteiro (HTML + CSS + JS em um arquivo só)
-precos.json       → valores dos pacotes (é este arquivo que o Admin grava)
-assets/img/       → hero, logo, ícones e galeria
-assets/fonts/     → Archivo Variable (usada nos cards de valor)
+index.html                → o site inteiro (HTML + CSS + JS em um arquivo só)
+precos.json               → valores dos pacotes (é este arquivo que o Admin grava)
+galeria.json              → lista de fotos da galeria (gerada pelo script)
+atualizar-galeria.command → script que prepara as fotos da galeria
+galeria-novas/            → onde você joga as fotos novas antes de rodar o script
+assets/img/               → hero, logo, ícones e galeria
+assets/fonts/             → Archivo Variable (usada nos cards de valor)
 ```
 
 ## Publicar no GitHub Pages
 
-1. Suba `index.html`, `precos.json` e a pasta `assets/` para a raiz do repositório.
+1. Suba `index.html`, `precos.json`, `galeria.json` e a pasta `assets/` para a raiz do repositório.
 2. Em **Settings → Pages**, em "Source" escolha a branch (ex: `main`) e a pasta `/ (root)`.
 3. A URL fica em `https://<seu-usuario>.github.io/<nome-do-repo>/`.
 
@@ -27,7 +30,8 @@ Dentro do painel dá para editar, de cada pacote:
 - **Subtítulo** — a linha fina abaixo do valor (ex: "Fotografia")
 - **Descrição** — o texto centralizado na parte escura; Enter quebra a linha
 - **Preço** e **Parcelas** — o "em até Nx" ao lado do valor (0 esconde a linha)
-- **★** — marca qual card leva o selo "Mais escolhido". É exclusivo: só um por vez.
+- **★** — marca qual card leva o selo "Mais escolhido". Um por categoria: marcar
+  outro card de Fotografia tira o selo do anterior, mas não mexe em Vídeo nem Combos.
 
 Três formas de salvar:
 
@@ -56,6 +60,31 @@ computador compartilhado**, e se o token vazar, revogue no GitHub.
 > de segurança — quem abrir o código-fonte consegue lê-la. A proteção real é o token do
 > GitHub: sem ele, ninguém publica nada.
 
+## Atualizar as fotos da galeria
+
+1. Coloque as fotos escolhidas na pasta **`galeria-novas/`** — pode ser em tamanho cheio,
+   direto do tratamento. Aceita jpg, png, webp, heic e tif.
+2. Dê **dois cliques** em `atualizar-galeria.command`.
+3. Suba `galeria.json` e a pasta `assets/img/gallery/` para o repositório.
+
+O script corta tudo em 2:3, redimensiona para 1200×1800, otimiza, renomeia em sequência
+(`gallery-01`, `gallery-02`, …) e reescreve o `galeria.json`. A galeria anterior **não é
+apagada**: vai para `assets/img/_galeria-anterior-<data>/`, caso você queira voltar atrás.
+
+**A ordem no site é a ordem alfabética dos arquivos.** Por isso vale numerar:
+`01-retrato-corporativo.jpg`, `02-still-de-produto.jpg`, e assim por diante. O nome também
+vira a legenda da foto (o número da frente é descartado, hífens e underscores viram
+espaço) — o que ajuda no acessibilidade e no Google. Dá para ajustar qualquer legenda
+depois editando o `galeria.json` na mão.
+
+As **10 primeiras** aparecem de cara; o resto entra no botão "Ver mais fotos". Para mudar
+esse número, altere `visiveis` no `galeria.json` (ou a variável `VISIVEIS` no topo do
+script, se quiser que valha sempre).
+
+> Por padrão o script usa o `sips`, que já vem no macOS, e gera **JPEG**. Se você rodar
+> `brew install webp` uma vez, ele passa a gerar **WebP** automaticamente — mesma
+> qualidade visual com arquivos ~40% menores. Vale a pena.
+
 ## Notas técnicas
 
 - **Tipografia**: o site usa Plus Jakarta Sans (Google Fonts). Os **cards de valor** usam
@@ -76,5 +105,8 @@ computador compartilhado**, e se o token vazar, revogue no GitHub.
   nos valores embutidos no `index.html` se o arquivo não existir. O preview local só
   prevalece enquanto for mais novo que o publicado.
 - **Barra flutuante**: aparece só depois que o visitante seleciona o primeiro pacote,
-  mostrando o total em tempo real.
+  mostrando o total em tempo real. O botão "Ver seleção" rola até o card do orçamento.
+- **Galeria**: o `index.html` não tem mais a lista de fotos escrita à mão — ele lê o
+  `galeria.json` a cada visita e cai numa lista embutida se o arquivo não existir. Por isso
+  adicionar ou remover fotos não exige mexer em HTML.
 - **Hero**: `hero-foto.webp` (~600 KB) com fallback PNG.
